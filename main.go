@@ -8,7 +8,7 @@ func main() {
 	// Send request
 	response, err := GetGasPrices()
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
 	fmt.Println(response)
 
