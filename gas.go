@@ -53,11 +53,9 @@ type GasFeeSuggestion struct {
 }
 
 func (gfs GasFeeSuggestion) String() string {
-	return fmt.Sprintf("%s:\t%.1f\n%s:\t%.1f\n%s:\t%.1f\n%s:\t%.1f\nETH/USD:\t%.2f\n",
+	return fmt.Sprintf("%s:\t%.1f\n%s:\t%.1f\nETH/USD:\t%.2f\n",
 		gfs.RapidTime, gfs.RapidWei,
 		gfs.FastTime, gfs.FastWei,
-		gfs.StandardTime, gfs.StandardWei,
-		gfs.SlowTime, gfs.SlowWei,
 		gfs.EthUsd,
 	)
 }
